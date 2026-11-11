@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Docente | Profa. Conceição - Geografia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="hero">
+        <img src="img/banner-escola.png" alt="Banner Centro Educa Mais Dom Ungarelli" class="hero-bg">
+        <div class="hero-content">
+            <img src="img/perfil-conceicao.png" alt="Foto da Professora Conceição" class="perfil-img">
+            <h1>Professora Conceição</h1>
+            <p class="subtitulo">Docente de Geografia | Centro Educa Mais Dom Ungarelli</p>
+            <p class="localizacao">Pinheiro - Maranhão</p>
+            <nav class="menu">
+                <a href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="sobre" class="card">
+            <h2>Sobre a Docente</h2>
+            <p>
+                Olá! Sou a <strong>Professora Conceição</strong>, educadora apaixonada pelo ensino de <strong>Geografia</strong> 
+                no ensino médio integral no <strong>Centro Educa Mais Dom Ungarelli</strong>, localizado em Pinheiro, Maranhão.
+            </p>
+            <p>
+                Meu trabalho busca conectar os conceitos geográficos — como cartografia, geopolítica, climatologia e 
+                estudos socioambientais — à realidade local da Baixada Maranhense, estimulando o protagonismo juvenil 
+                e o pensamento crítico dos estudantes.
+            </p>
+        </section>
+
+        <section id="projetos" class="card">
+            <h2>Projetos Pedagógicos e Eletivas</h2>
+            <div class="grid-projetos">
+                <article class="projeto-item">
+                    <img src="img/projeto-cartografia.png" alt="Projeto de Cartografia">
+                    <h3>Cartografia Social e Território</h3>
+                    <p>Oficinas práticas de leitura de mapas, coordenadas geográficas e mapeamento comunitário em Pinheiro - MA.</p>
+                </article>
+                <article class="projeto-item">
+                    <img src="img/projeto-meio-ambiente.png" alt="Projeto Meio Ambiente">
+                    <h3>Sustentabilidade na Baixada Maranhense</h3>
+                    <p>Estudo de campo e debates sobre recursos hídricos, ecossistemas locais e preservação ambiental.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato" class="card">
+            <h2>Contato Institucional</h2>
+            <p>Entre em contato para parcerias pedagógicas, projetos escolares ou informações sobre as aulas:</p>
+            <form id="formContato" action="/api/contato" method="POST">
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+
+                <label for="email">Seu E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Escreva sua mensagem para a Profa. Conceição"></textarea>
+
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+            <p id="statusEnvio" class="status"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Portfólio Docente da Professora Conceição | Centro Educa Mais Dom Ungarelli</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
